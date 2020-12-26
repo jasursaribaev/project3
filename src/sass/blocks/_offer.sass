@@ -1,0 +1,90 @@
+.offer
+  background-image: url('../img/offer/offer-bg.png')
+  background-repeat: no-repeat
+  background-position: center right
+  background-size: contain
+  padding: 80px 0
+  position: relative
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    width: 50%
+    height: 100%
+    background-color: #fff
+  &-block
+    position: relative
+    width: 50%
+    padding-right: 90px
+    color: $text-color3
+  &__title
+    max-width: 347px
+    font-size: 24px
+    line-height: 35px
+    margin-bottom: 24px
+    +bold
+  &__subtitle
+    display: block
+    font-size: 16px
+    max-width: 233px
+    margin-bottom: 30px
+    +reg
+  &__input
+    width: 240px
+    margin-bottom: 30px
+    &:first-child
+      margin-right: 10px
+    &:focus
+      outline: none
+      border-color: $main-color
+  &__button
+    width: 100%
+    min-height: 70px
+  &-call
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 30px
+    &__text
+      max-width: 226px
+      margin: 0
+      font-size: 15px
+      line-height: 24px
+      +reg
+  &-phone
+    max-width: 192px
+    &__text
+      color: $text-color3
+      display: block
+      font-size: 15px
+      line-height: 24px
+      +reg
+    &__num
+      font-size: 15px
+      +bold
+@media (max-width: 1200px)
+  .offer
+    background-size: cover
+    &__input
+      width: 100%
+      margin-bottom: 10px
+    &__button
+      font-size: 13px
+    &-call
+      flex-wrap: wrap
+@media (max-width: 768px)
+  .offer
+    padding: 50px 0
+    background: #fff
+    &-block
+      width: 100%
+      padding-right: 0
+    &__title
+      margin-bottom: 20px
+    &__subtitle
+      margin-bottom:
+    &-call
+      flex-wrap: wrap
+      &__text
+        max-width: 270px

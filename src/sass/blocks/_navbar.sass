@@ -25,7 +25,10 @@
   &__button
     color: $text-color3
     font-size: 13px
+    transition: all 0.3s
     +bold
+    &:hover
+      background-color: lighten($main-color, 10%)
 
 @media (max-width: 768px)
   .navbar
