@@ -1,0 +1,87 @@
+.price
+  padding-top: 100px
+  padding-bottom: 132px
+  &__title
+    max-width: 515px
+    margin: 0 auto
+    margin-bottom: 58px
+  &__subtitle
+    display: block
+    color: $text-color0
+    font-size: 20px
+    text-align: center
+    line-height: 45px
+    margin-bottom: 59px
+    +reg
+.cards
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+.card
+  border: 1px solid #e8e8e8
+  background-color: #ffffff
+  transition: 0.2s
+  &:hover
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
+    .card__image::before
+      opacity: 1
+.card__image
+  position: relative
+  &::before
+    content: ""
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%)
+    opacity: 0
+.price__card
+  margin-bottom: 30px
+.card__text
+  text-align: center
+  margin-top: 39px
+  margin-bottom: 47px
+.card__title
+  color: $text-color0
+  font-size: 18px
+  line-height: 45px
+  margin-bottom: 32px
+  +reg
+.card__link
+  color: $text-color3
+  text-decoration: none
+  font-size: 16px
+  line-height: 18px
+  position: relative
+  z-index: 2
+  +bold
+  &::after
+    content: ""
+    position: absolute
+    bottom: -4px
+    left: 0px
+    display: block
+    width: 96px
+    height: 3px
+    background-color: #ffd200
+    margin-top: 4px
+    z-index: -1
+    transition: all 0.4s
+  &:hover::after
+    height: 13px
+@media (max-width: 1200px)
+  .card__image
+    max-width: 350px
+@media (max-width: 780px)
+  .price
+    padding-top: 50px
+  .cards
+    justify-content: center
+
+@media (max-width: 414px)
+.price
+  padding-top: 50px
+  &__title
+    font-size: 18px
+    margin-bottom: 27px
