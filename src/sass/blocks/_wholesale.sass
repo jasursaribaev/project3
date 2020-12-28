@@ -1,0 +1,59 @@
+.wholesale
+  &__title
+    margin: 0 auto
+    padding: 100px 0
+    background-color: $main-color
+  &__title > span
+    display: block
+  &-block
+    display: flex
+    justify-content: space-between
+    margin-top: 100px
+  &-item
+    max-width: 370px
+    height: 396px
+    background-color: #f7f7f7
+    &__img1
+      background-image: url('../img/who1_bg.png')
+      background-size: 100%
+      background-repeat: no-repeat
+    &__img2
+      background-image: url('../img/who2_bg.png')
+      background-size: 100%
+      background-position: 0px -27px
+      background-repeat: no-repeat
+    &__img3
+      background-image: url('../img/who3_bg.png')
+      background-size: 100%
+      background-repeat: no-repeat
+    &__title
+      color: $text-color0
+      margin: 27px 60px 63px 26px
+      font-size: 16px
+      +reg
+@media (max-width: 1200px)
+  .wholesale
+    &-block
+      flex-wrap: wrap
+      justify-content: center
+    &-item
+      margin-bottom: 30px
+    &__title
+      font-size: 20px
+@media (max-width: 450px)
+  .wholesale
+    &-block
+      flex-wrap: wrap
+      justify-content: center
+      margin-top: 59px
+    &-item
+      margin-bottom: 30px
+      font-size: 12px
+      line-height: 16px
+      height: 348px
+    &__title
+      font-size: 18px
+      padding: 72px 30px
+      line-height: 24px
+    &__title > span
+      display: inline
