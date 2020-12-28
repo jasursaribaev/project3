@@ -1,0 +1,39 @@
+.warranty
+  padding-top: 100px
+  padding-bottom: 200px
+  &__title
+    max-width: 645px
+    margin: 0 auto
+    margin-bottom: 100px
+  &-items
+    display: flex
+    justify-content: space-between
+  &-item
+    max-width: 276px
+    &__img
+      border: 20px solid #f5f5f5
+      background-color: #ffffff
+    &__text
+      text-align: center
+      margin-top: 41px
+      font-size: 18px
+      line-height: 24px
+      +reg
+
+@media (max-width: 1200px)
+  .warranty
+    &-items
+      display: block
+    &-item
+      margin: 0 auto
+@media (max-width: 768px)
+  .warranty
+    padding-top: 77px
+    padding-bottom: 90px
+  .warranty__title
+    font-size: 18px
+    line-height: 24px
+    margin-bottom: 77px
+  .warranty-item__text
+    font-size: 14px
+    margin-top: 31px

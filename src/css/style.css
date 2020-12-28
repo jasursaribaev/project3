@@ -943,4 +943,67 @@ img {
     display: inline;
   }
 }
+
+.warranty {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+.warranty__title {
+  max-width: 645px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.warranty-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.warranty-item {
+  max-width: 276px;
+}
+
+.warranty-item__img {
+  border: 20px solid #f5f5f5;
+  background-color: #ffffff;
+}
+
+.warranty-item__text {
+  text-align: center;
+  margin-top: 41px;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+}
+
+@media (max-width: 1200px) {
+  .warranty-items {
+    display: block;
+  }
+  .warranty-item {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .warranty {
+    padding-top: 77px;
+    padding-bottom: 90px;
+  }
+  .warranty__title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 77px;
+  }
+  .warranty-item__text {
+    font-size: 14px;
+    margin-top: 31px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
